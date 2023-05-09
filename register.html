@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regiser</title>
+    <meta property="og:title" content="Little lemon Register">
+    <meta property="og:description" content="Register your account at little lemon">
+    <meta property="og:image" content="R.png">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <div class="register" style="text-align:center">
+        <nav>
+            <ul class="nav">
+                <li><a href="web.html" class="header">Home</a></li>
+                <li><a href="#Contact" class="header">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="promotion" class="center">
+            <div class="center" id="promotion-content">
+                <h2>Sign Up</h2>
+                <h3>Be a member of MiTuan Fun Club!</h3>
+            </div>
+        </section>
+        <form>
+            <div>
+                <h3>ID</h3>
+                <label for="username">Username</label><br>
+                <input type="text" id="username" required minlength="2">
+                <br><br>
+            </div>
+            <div>
+                <h3>EMAIL</h3>
+                <p>Please enter valid email address</p>
+                <input type="email" id="user_email" name="user_email" required>
+                <br><br><br>
+            </div>
+            <div>
+                <h3>PASSWORD</h3>
+                <p>Please enter a 8-12 letter password</p>
+                <input type="password" id="user_pwd" name="user_pwd" required minlength="8" maxlength="14">
+                <br><br><br>
+            </div>
+            <div>
+                <h3>CONFIRM YOUR PASSWORD</h3>
+                <p>Make sure password you entered two times are identical</p>
+                <input type="password" id="confirm" name="confirm" onkeyup="checkPasswordMatch();">
+                <div id="passwordMatch"></div>
+            </div>
+            <div>
+                <button type="submit" id="submitBtn" onclick="if (document.getElementById('name').value === '' ||
+                                                document.getElementById('email').value === '') { alert('Please fill in all required fields!'); 
+                                                return false; } else { alert('Successfully submitted!'); }">Submit</button>
+                <br><br>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="Contact-area" id="Contact">
+            <div>Email: littlelemon@gamil.com</div>
+            <div>Phone: +1 123 456 7890</div>
+            <div>Copyright © 2023 Little Lemon®. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>
