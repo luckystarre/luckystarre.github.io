@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <meta property="og:title" content="Little lemon Booking">
+    <meta property="og:description" content="Book your appointment at little lemon">
+    <meta property="og:image" content="R.png">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <div class="Book" style="text-align:center;">
+        <nav>
+            <ul class="nav">
+                <li><a href="web.html" class="header">Home</a></li>
+                <li><a href="#Contact" class="header">Contact</a></li>
+            </ul>
+        </nav>
+        <form1>
+            <div>
+                <b><label for="email_address"><span style="font-size: 1.5rem;"> Email Address </span></label></b><br>
+                <input type="email" id="email_address" name="email_address"><br>
+            </div>
+            <div>
+                <b>
+                    <label for="booking_date"><span style="font-size: 1.5rem;"> Date of Booking </span></label>
+                </b><br>
+                <input type="date" id="booking_date" name="booking_date"><br>
+            </div>
+            <div>
+                <b>
+                    <label for="people"><span style="font-size: 1.5rem;"> Number of People </span></label>
+                </b><br>
+                <fieldset>
+                    <input type="radio" value="2" name="size"> 2-person table
+                    <input type="radio" value="4" name="size" checked> 4-person table
+                    <input type="radio" value="6" name="size"> 6-person table
+                </fieldset>
+            </div>
+            <div>
+                <b>
+                    <label for="location"><span style="font-size: 1.5rem;"> Location </span></label>
+                </b><br>
+                <fieldset>
+                    <input type="radio" value="indoors" name="location"> Indoors
+                    <input type="radio" value="outdoors" name="location"> Outdoors
+                </fieldset><br>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <span style="font-size: 1.5rem;"> I agree to the cancellation policy </span>
+                </label>
+            </div>
+            <button type="submit">Book Now</button><br><br>
+        </form1>
+    </div>
+    <footer>
+        <div class="Contact-area" id="Contact">
+            <div>Email: littlelemon@gamil.com</div>
+            <div>Phone: +1 123 456 7890</div>
+            <div>Copyright © 2023 Little Lemon®. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>
