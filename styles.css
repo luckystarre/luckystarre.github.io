@@ -96,12 +96,12 @@ nav ul li {
         transition: all 0.3s ease;
     }
         nav ul li a:hover {
-            color:white; /* ÔÚhoverÊ±¸ü¸ÄÎÄ×ÖÑÕÉ« */
-            padding: 15px; /* ÔÚhoverÊ±Ôö¼ÓÄÚ±ß¾à */
+            color:white; /* åœ¨hoveræ—¶æ›´æ”¹æ–‡å­—é¢œè‰² */
+            padding: 15px; /* åœ¨hoveræ—¶å¢åŠ å†…è¾¹è· */
         }
 
 button:active {
-    transform: scale(1.1); /* µã»÷Ê±½«°´Å¥·Å´ó10% */
+    transform: scale(1.1); /* ç‚¹å‡»æ—¶å°†æŒ‰é’®æ”¾å¤§10% */
 }
 
 #promotion {
@@ -204,6 +204,7 @@ footer {
     background-color: darkslategrey;
     padding: 2% 50px;
     border-radius: 50px;
+  margin-top:20px;
 }
 html {
     scroll-behavior: smooth;
